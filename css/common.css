@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f6fa;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* max-width: 1330px; */
+  height: 72px;
+  margin: 0 auto;
+  padding: 0 66px;
+  background-color: rgb(253, 253, 253);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-weight: 700;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: rgba(102, 102, 102);
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #1890ff;
+}
+
+.nav-menu .active {
+  color: #1890ff;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 24px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: rgba(102, 102, 102);
+  opacity: 1;
+}
+
+.search-button:hover {
+  color: #1890ff;
+}
+
+.search-button span {
+  font-size: 16px;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: #666;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.search-input-wrapper.active {
+  width: 200px;
+  opacity: 1;
+}
+
+.search input {
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-cancel {
+  display: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.search-cancel.active {
+  display: block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-link:hover {
+  color: #1890ff;
+}
+
+.footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #999;
+  font-size: 12px;
+}
+
+.footer-content a {
+  color: #999;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: #fff;
+}
+
+.footer-divider {
+  margin: 0 8px;
+  color: #666;
+}
